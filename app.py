@@ -16,7 +16,7 @@ from sklearn.ensemble import RandomForestClassifier
 app = Flask(__name__)
 
 # ── Config (set these as Railway environment variables) ────────
-SECRET_KEY   = os.environ.get('TTAKAIQ_SECRET', 'changeme')
+SECRET_KEY   = os.environ.get('TTAKAIQ_SECRET', 'basher-912-1245-jsgd')
 MODELS_DIR   = Path('models')
 MODELS_DIR.mkdir(exist_ok=True)
 
