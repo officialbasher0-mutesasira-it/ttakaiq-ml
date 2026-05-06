@@ -118,6 +118,12 @@ def health():
         'crops_loaded':  list(crop_models.keys())
     })
 
+
+@app.route('/ping', methods=['GET'])
+def ping():
+    return {"status": "alive"}, 200
+
+
 @app.route('/retrain-status')
 def retrain_status():
     return jsonify({'model_version': model_version, 'crops': list(crop_models.keys())})
